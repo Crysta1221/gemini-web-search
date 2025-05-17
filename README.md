@@ -1,6 +1,24 @@
 # MCP Server for Gemini Google Search
 This is an MCP server that provides Google search results using the Google search grounding feature of the Gemini API.
 
+# Usage
+For Cline, just set it as follows in `cline_mcp_settings.json`.
+```json
+{
+"mcpServers": {
+"gemini-web-search": {
+"command": "cmd",
+"args": ["/c", "npx","-y", "@crystaworld/gemini-web-search@latest"],
+"env": {
+"GEMINI_API_KEY": ""
+},
+"disabled": false,
+}
+}
+}
+```
+For Linux/MacOS, just run `npx -y @crystaworld/gemini-web-search@latest` directly.
+
 # Arguments
 Normally, you don't need to think about these arguments, but you can check the arguments provided by this MCP here.
 - `query *` - `string`: The text to search for
@@ -22,7 +40,8 @@ You can verify this MCP server in your local environment.
         ],
         "env": {
         "GEMINI_API_KEY": ""
-        }
+        },
+        "disabled": false,
       }
     }
   }
