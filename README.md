@@ -6,15 +6,15 @@ For Cline, just set it as follows in `cline_mcp_settings.json`.
 ```json
 {
 "mcpServers": {
-"gemini-web-search": {
-"command": "cmd",
-"args": ["/c", "npx","-y", "@crystaworld/gemini-web-search@latest"],
-"env": {
-"GEMINI_API_KEY": ""
-},
-"disabled": false,
-}
-}
+  "gemini-web-search": {
+    "command": "cmd",
+    "args": ["/c", "npx","-y", "@crystaworld/gemini-web-search@latest"],
+    "env": {
+    "GEMINI_API_KEY": ""
+    },
+    "disabled": false,
+    }
+  }
 }
 ```
 For Linux/MacOS, just run `npx -y @crystaworld/gemini-web-search@latest` directly.
