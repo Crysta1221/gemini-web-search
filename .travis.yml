@@ -1,4 +1,5 @@
 language: node_js
+dist: noble
 node_js:
   - "22"
   - "20"
