@@ -1,6 +1,6 @@
 {
   "name": "@crystaworld/gemini-web-search",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "This is an MCP server that provides Google search results using the Google search grounding feature of the Gemini API.",
   "homepage": "https://crystaworld.dev",
   "main": "dist/index.js",
@@ -16,7 +16,8 @@
   "type": "module",
   "scripts": {
     "dev": "bun index.ts",
-    "build": "bun build index.ts --outdir dist --target node"
+    "build": "bun build index.ts --outdir dist --target node",
+    "publish": "bun publish --tag latest --access=public"
   },
   "dependencies": {
     "@google/genai": "^0.14.1",
