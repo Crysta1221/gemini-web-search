@@ -1,6 +1,6 @@
 {
   "name": "@crystaworld/gemini-web-search",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is an MCP server that provides Google search results using the Google search grounding feature of the Gemini API.",
   "homepage": "https://crystaworld.dev",
   "main": "./dist/index.cjs",
